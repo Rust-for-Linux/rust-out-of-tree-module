@@ -2,9 +2,6 @@
 
 //! Rust out-of-tree sample
 
-#![no_std]
-#![feature(allocator_api, global_asm)]
-
 use kernel::prelude::*;
 
 module! {
