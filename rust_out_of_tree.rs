@@ -16,7 +16,7 @@ struct RustOutOfTree {
     message: String,
 }
 
-impl KernelModule for RustOutOfTree {
+impl kernel::Module for RustOutOfTree {
     fn init(_name: &'static CStr, _module: &'static ThisModule) -> Result<Self> {
         pr_info!("Rust out-of-tree sample (init)\n");
 
