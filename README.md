@@ -25,6 +25,12 @@ make[1]: Entering directory '.../linux-with-rust-support'
 make[1]: Leaving directory '.../linux-with-rust-support'
 ```
 
+```txt
+[    1.076945] rust_out_of_tree: Rust out-of-tree sample (init)
+[    1.084944] rust_out_of_tree: My numbers are [72, 108, 200]
+[    1.085944] rust_out_of_tree: Rust out-of-tree sample (exit)
+```
+
 For details about the Rust support, see https://github.com/Rust-for-Linux/linux.
 
 For details about out-of-tree modules, see https://www.kernel.org/doc/html/latest/kbuild/modules.html.
