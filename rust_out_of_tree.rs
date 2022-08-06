@@ -9,7 +9,7 @@ module! {
     name: b"rust_out_of_tree",
     author: b"Rust for Linux Contributors",
     description: b"Rust out-of-tree sample",
-    license: b"GPL v2",
+    license: b"GPL",
 }
 
 struct RustOutOfTree {
