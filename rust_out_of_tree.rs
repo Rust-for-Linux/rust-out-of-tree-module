@@ -6,10 +6,10 @@ use kernel::prelude::*;
 
 module! {
     type: RustOutOfTree,
-    name: b"rust_out_of_tree",
-    author: b"Rust for Linux Contributors",
-    description: b"Rust out-of-tree sample",
-    license: b"GPL",
+    name: "rust_out_of_tree",
+    author: "Rust for Linux Contributors",
+    description: "Rust out-of-tree sample",
+    license: "GPL",
 }
 
 struct RustOutOfTree {
