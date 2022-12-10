@@ -8,3 +8,4 @@
 *.rmeta
 Module.symvers
 modules.order
+rust-project.json
