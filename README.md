@@ -34,3 +34,11 @@ make[1]: Leaving directory '.../linux-with-rust-support'
 For details about the Rust support, see https://github.com/Rust-for-Linux/linux.
 
 For details about out-of-tree modules, see https://www.kernel.org/doc/html/latest/kbuild/modules.html.
+
+## rust-analyzer
+
+Rust for Linux supports building a `rust-project.json` configuration for [`rust-analyzer`](https://rust-analyzer.github.io/), including for out-of-tree modules:
+
+```sh
+make -C .../linux-with-rust-support M=`pwd` rust-analyzer
+```
