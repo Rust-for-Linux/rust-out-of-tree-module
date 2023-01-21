@@ -6,10 +6,10 @@ use kernel::prelude::*;
 
 module! {
     type: RustOutOfTree,
-    name: "rust_out_of_tree",
-    author: "Rust for Linux Contributors",
-    description: "Rust out-of-tree sample",
-    license: "GPL",
+    name: b"rust_out_of_tree",
+    author: b"Rust for Linux Contributors",
+    description: b"Rust out-of-tree sample",
+    license: b"GPL",
 }
 
 struct RustOutOfTree {
@@ -17,7 +17,7 @@ struct RustOutOfTree {
 }
 
 impl kernel::Module for RustOutOfTree {
-    fn init(_name: &'static CStr, _module: &'static ThisModule) -> Result<Self> {
+    fn init(_module: &'static ThisModule) -> Result<Self> {
         pr_info!("Rust out-of-tree sample (init)\n");
 
         let mut numbers = Vec::new();
