@@ -33,7 +33,7 @@ make[1]: Leaving directory '.../linux-with-rust-support'
 
 For details about the Rust support, see https://github.com/Rust-for-Linux/linux.
 
-For details about out-of-tree modules, see https://www.kernel.org/doc/html/latest/kbuild/modules.html.
+For details about out-of-tree modules, see https://docs.kernel.org/kbuild/modules.html.
 
 ## rust-analyzer
 
