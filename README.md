@@ -31,7 +31,7 @@ make[1]: Leaving directory '.../linux-with-rust-support'
 [    1.085944] rust_out_of_tree: Rust out-of-tree sample (exit)
 ```
 
-For details about the Rust support, see https://github.com/Rust-for-Linux/linux.
+For details about the Rust support, see https://rust-for-linux.com.
 
 For details about out-of-tree modules, see https://docs.kernel.org/kbuild/modules.html.
 
