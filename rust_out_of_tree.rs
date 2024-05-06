@@ -21,9 +21,9 @@ impl kernel::Module for RustOutOfTree {
         pr_info!("Rust out-of-tree sample (init)\n");
 
         let mut numbers = Vec::new();
-        numbers.try_push(72)?;
-        numbers.try_push(108)?;
-        numbers.try_push(200)?;
+        numbers.push(72, GFP_KERNEL)?;
+        numbers.push(108, GFP_KERNEL)?;
+        numbers.push(200, GFP_KERNEL)?;
 
         Ok(RustOutOfTree { numbers })
     }
