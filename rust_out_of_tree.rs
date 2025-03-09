@@ -7,7 +7,7 @@ use kernel::prelude::*;
 module! {
     type: RustOutOfTree,
     name: "rust_out_of_tree",
-    author: "Rust for Linux Contributors",
+    authors: ["Rust for Linux Contributors"],
     description: "Rust out-of-tree sample",
     license: "GPL",
 }
