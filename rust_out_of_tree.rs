@@ -12,6 +12,9 @@ module! {
     license: "GPL",
 }
 
+// Sample values to demonstrate kernel vector usage
+const SAMPLE_VALUES: [i32; 3] = [72, 108, 200];
+
 struct RustOutOfTree {
     numbers: KVec<i32>,
 }
@@ -21,9 +24,9 @@ impl kernel::Module for RustOutOfTree {
         pr_info!("Rust out-of-tree sample (init)\n");
 
         let mut numbers = KVec::new();
-        numbers.push(72, GFP_KERNEL)?;
-        numbers.push(108, GFP_KERNEL)?;
-        numbers.push(200, GFP_KERNEL)?;
+        for &value in &SAMPLE_VALUES {
+            numbers.push(value, GFP_KERNEL)?;
+        }
 
         Ok(RustOutOfTree { numbers })
     }

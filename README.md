@@ -15,15 +15,37 @@ Please note that:
 Example:
 
 ```sh
-$ make KDIR=.../linux-with-rust-support LLVM=1
-make -C .../linux-with-rust-support M=$PWD
+# Basic build (LLVM=1 is now default)
+$ make
+make -C .../linux-with-rust-support M=$PWD LLVM=1
 make[1]: Entering directory '.../linux-with-rust-support'
   RUSTC [M] .../rust-out-of-tree-module/rust_out_of_tree.o
   MODPOST .../rust-out-of-tree-module/Module.symvers
   CC [M]  .../rust-out-of-tree-module/rust_out_of_tree.mod.o
   LD [M]  .../rust-out-of-tree-module/rust_out_of_tree.ko
 make[1]: Leaving directory '.../linux-with-rust-support'
+
+# Verify the build
+$ make check
+
+# See all available targets
+$ make help
 ```
+
+## Usage
+
+After building, you can load and test the module:
+
+```sh
+# Load the module
+sudo insmod rust_out_of_tree.ko
+
+# Check kernel logs for output
+sudo dmesg | tail
+
+# Unload the module
+sudo rmmod rust_out_of_tree
+
 
 ```txt
 [    1.076945] rust_out_of_tree: Rust out-of-tree sample (init)
