@@ -12,6 +12,8 @@ Please note that:
 
   - All Rust symbols are `EXPORT_SYMBOL_GPL`.
 
+  - Linux kernel development is generally done against upstream (mainline), not distribution kernels. For learning purposes in particular, it is recommended to develop in-tree and to run and test your kernel within a VM.
+
 Example:
 
 ```sh
