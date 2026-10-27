@@ -39,7 +39,7 @@ For details about out-of-tree modules, see https://docs.kernel.org/kbuild/module
 
 ## rust-analyzer
 
-Rust for Linux (with https://lore.kernel.org/rust-for-linux/20230121052507.885734-1-varmavinaym@gmail.com/ applied) supports building a `rust-project.json` configuration for [`rust-analyzer`](https://rust-analyzer.github.io/), including for out-of-tree modules:
+Rust for Linux supports building a `rust-project.json` configuration for [`rust-analyzer`](https://rust-analyzer.github.io/), including for out-of-tree modules:
 
 ```sh
 make -C .../linux-with-rust-support M=$PWD rust-analyzer
