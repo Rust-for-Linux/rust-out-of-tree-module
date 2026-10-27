@@ -6,7 +6,7 @@ Please note that:
 
   - The kernel that the module is built against needs to be Rust-enabled (`CONFIG_RUST=y`).
 
-  - The kernel tree (`KDIR`) requires the Rust metadata to be available. These are generated during the kernel build, but may not be available for installed/distributed kernels (the scripts that install/distribute kernel headers etc. for the different package systems and Linux distributions are not updated to take into account Rust support yet).
+  - The kernel tree (`KDIR`) requires the Rust metadata to be available. These are generated during the kernel build and may or may not be available for installed/distributed kernels: the in-tree packaging scripts do not account for Rust artifacts yet, but some popular distributions that enable Rust do provide the needed files.
 
   - All Rust symbols are `EXPORT_SYMBOL_GPL`.
 
